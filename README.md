@@ -21,4 +21,3 @@ Jouw klas
 Bootstrap (MIT License)
 - Copyright (c) 2011-2018 Twitter, Inc.
 - Copyright (c) 2011-2018 The Bootstrap Authors
-
