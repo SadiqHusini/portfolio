@@ -18,15 +18,40 @@
     <nav class="navbar bg-black">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
-                <img src="./assets/images/logo.png" alt="Bootstrap" width="30" height="30">
+                <img src="./assets/images/logo.png" alt="Logo" width="30" height="30">
             </a>
-            <span class="navbar-text text-white">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/images/nav.png" alt="Bootstrap" height="20" height="20">
-                </a>
-            </span>
+            <button class="navbar-toggler border-0" type="button" id="menuButton">
+                <img src="./assets/images/nav.png" alt="Menu" height="20">
+            </button>
         </div>
     </nav>
+
+    <!-- Menu -->
+    <div id="fullscreenMenu" class="fullscreen-menu">
+        <div class="menu-content">
+            <div class="menu-label">MENU</div>
+
+            <div class="menu-items">
+                <a href="./index.html">HOME</a>
+                <a href="./projects.html">PROJECTS</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+
+            <div class="menu-footer">
+                <h5>SADIQ.HUSINI@STUDENT.PXL.BE</h5>
+                <h6>+32 4 89 84 02 14</h6>
+                <div class="social-icons">
+                    <a href="#" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="color: black;"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <button class="close-button" id="closeButton">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+            </button>
+        </div>
+    </div>
 
     <div class="container-fluid bg-black text-white d-flex justify-content-center align-items-center"
         style="height: 100vh; margin: 0;">
@@ -124,6 +149,27 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/96da9ebac4.js" crossorigin="anonymous"></script>
+    <script>
+        console.log('Menu script loaded');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menuButton');
+            const closeButton = document.getElementById('closeButton');
+            const fullscreenMenu = document.getElementById('fullscreenMenu');
+
+            console.log('Menu elements:', { menuButton, closeButton, fullscreenMenu });
+
+            menuButton.addEventListener('click', function () {
+                console.log('Menu button clicked');
+                fullscreenMenu.style.display = 'block';
+            });
+
+            closeButton.addEventListener('click', function () {
+                console.log('Close button clicked');
+                fullscreenMenu.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>
