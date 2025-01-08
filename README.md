@@ -17,3 +17,9 @@ Jouw klas
 - Bron 1, website
 - Bron 2, website
 
+# Library Licenses
+Bootstrap
+MIT License
+Copyright (c) 2011-2018 Twitter, Inc.
+Copyright (c) 2011-2018 The Bootstrap Authors
+
