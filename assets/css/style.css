@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Rubik:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@300..900&display=swap');
+
+h1, h2 {
+    font-family: "League Gothic", serif;
+    font-weight: 900; /* Bold */
+    font-style: normal;
+}
+
+h3, h4 {
+    font-family: "League Gothic", serif;
+    font-weight: 700; /* Medium */
+    font-style: normal;
+}
+
+h5, h6 {
+    font-family: "League Gothic", serif;
+    font-weight: 300; /* Normal */
+    font-style: normal;
+    letter-spacing: 1.5px; /* Increased letter spacing for wider space between letters */
+}
+p, a {
+    font-family: "Roboto", serif;
+    font-weight: 300; 
+    font-style: normal;
+}
+
+.bg-black {
+    background-color: "#000000";
+  }
+
+.bg-gray {
+    background-color: "##D9D9D9";
+  }
+
+  a {
+    text-decoration: none !important;
+  }
