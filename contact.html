@@ -54,39 +54,41 @@
     </div>
 
     <div class="container-fluid bg-black text-white d-flex justify-content-center align-items-center"
-        style="height: 100vh; margin: 0;">
+        style="height: 50vh; margin: 0;">
         <div>
             <h1 class="text-center" style="font-size: 4rem;">CONTACT ME</h1>
         </div>
     </div>
 
     <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-6 mb-3">
-                    <div class="form-floating">
-                        <input type="text" class="form-control border-0 border-bottom rounded-0" id="nameInput">
-                        <label for="nameInput">Name</label>
+        <div class="container-lg">
+            <div class="mx-auto" style="max-width: 768px;">  <!-- Added wrapper div -->
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control border-0 border-bottom rounded-0" id="nameInput">
+                            <label for="nameInput">Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-floating">
+                            <input type="email" class="form-control border-0 border-bottom rounded-0" id="emailInput">
+                            <label for="emailInput">Email</label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="mb-4">
                     <div class="form-floating">
-                        <input type="email" class="form-control border-0 border-bottom rounded-0" id="emailInput">
-                        <label for="emailInput">Email</label>
+                        <textarea class="form-control border-0 border-bottom rounded-0" id="messageInput"
+                            style="height: 150px"></textarea>
+                        <label for="messageInput">Message</label>
                     </div>
                 </div>
-            </div>
-            <div class="mb-4">
-                <div class="form-floating">
-                    <textarea class="form-control border-0 border-bottom rounded-0" id="messageInput"
-                        style="height: 150px"></textarea>
-                    <label for="messageInput">Message</label>
+                <div class="text-center">
+                    <button class="bg-gray rounded-0 border-0 py-3 px-5">
+                        <i class="fa-solid fa-arrow-right fa-sm me-2"></i>SUBMIT
+                    </button>
                 </div>
-            </div>
-            <div class="text-center">
-                <button class="bg-gray rounded-0 border-0 py-3 px-5">
-                    <i class="fa-solid fa-arrow-right fa-sm me-2"></i>SUBMIT
-                </button>
             </div>
         </div>
     </div>
